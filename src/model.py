@@ -8,8 +8,8 @@ def initialize_model(adata):
     return model
 
 if __name__ == "__main__":
-    from preprocessing import load_and_preprocess
-    adata = load_and_preprocess("../data/sample.h5ad")
+    from preprocessing import load_sample_data
+    adata = load_sample_data("../data/sample.h5ad")
 
     model = initialize_model(adata)
     print("Model initialized successfully.")
